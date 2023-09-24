@@ -16,7 +16,7 @@ const Select = ({
   const [value, setValue] = useState();
   const [collapsed, setCollapsed] = useState(true);
   const changeValue = (newValue) => {
-    onChange();
+    onChange(newValue); //ajout de la valeur newValue qui permet le l'affraichissement des données. 
     setValue(newValue);
     setCollapsed(newValue);
   };
